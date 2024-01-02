@@ -6,14 +6,14 @@ body {
 
 body {
   width: 100%;
-  background: #34495e;
+  background: #000000;
   background-image: url("data:image/svg+xml,%3Csvg width='100' height='60' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ecf0f1' fill-opacity='0.2'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  font-family: verdana, sans-serif;
+  font-family: moderat, sans-serif;
 }
 
 .hide {
@@ -38,6 +38,7 @@ body {
   color: #999999;
   transition: min-height 0.6s ease-in-out;
 }
+
 .card .inner {
   position: relative;
   width: 100%;
@@ -48,24 +49,28 @@ body {
   overflow: hidden;
   transition: all 0.05s ease-in-out;
 }
+
 .card .inner.open {
   opacity: 1;
   max-height: 999px;
   transition: all 0.6s ease-in-out;
 }
 .card .inner h1 {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: lighter;
-  color: #555555;
+  /* font-weight: lighter; (removed font weight on title) ~amh */
+  color: #000000; /* updated font color ~amh */
 }
+
 .card .inner p {
-  font-size: 12px;
+  font-size: 16px; /* increased font size so it is easier to read on mobile devices ~amh */
+  color: #555555; /* added font color ~amh */
 }
+
 .card .inner input#name {
   position: relative;
-  width: 60%;
+  width: 80%; /* changed from 60% to 80% to allow for more space to type in name ~amh */
   border: none;
   background-color: #f8f8f8;
   border-radius: 3px;
@@ -73,20 +78,23 @@ body {
   padding: 5px 15px;
   text-align: center;
   font-size: 20px;
-  color: #999999;
+  color: #212121;
   transition: all 0.4s ease-in-out;
   box-sizing: border-box;
 }
+
 .card .inner input#name:focus {
   outline: none;
   border-radius: 0;
   background-color: transparent;
-  border: 2px solid #3498db;
+  border: 2px solid #000000;
 }
+
 .card .inner .stuck {
   font-size: 12px;
   color: #555555;
 }
+
 .card .inner .score {
   position: relative;
   width: 50%;
@@ -97,25 +105,27 @@ body {
   justify-content: space-between;
   align-items: stretch;
 }
+
 .card .inner .score span:last-child {
   color: #f1c40f;
 }
+
 .card .inner button {
   background: none;
   border: none;
   text-transform: uppercase;
   color: #eeeeee;
-  background-color: #3498db;
+  background-color: #000000;
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 3px;
   transition: all 0.4s ease-in-out;
 }
+
 .card .inner button:hover, .card .inner button:focus {
   outline: none;
-  background-color: #2980b9;
+  background-color: #333333;
 }
-
 svg #game-board.open .option {
   transform: translateY(0px) translateX(0px) !important;
 }
@@ -158,13 +168,13 @@ svg #game-board .option.top.right {
   justify-content: space-between;
   align-items: stretch;
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .game-stats .lifes {
-  color: #e74c3c;
+  color: #cc203b; /* changed color ~amh */
 }
 .game-stats .level {
-  color: #f1c40f;
+  color: #cc203b;  /* changed color ~amh */
 }
 
 .message {
