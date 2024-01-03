@@ -7,7 +7,8 @@ $(document).ready(() => {
   let lifesContainer = $('.game-stats .lifes span.val');
   let gameBoard = $('svg #game-board');
   let gameBoardOption = $('svg #game-board .option');
-  let colorArray = ['#5C6A85','#C8DEE2','#F0F1EA','#958896','#8D8C7F','#373D3F','#B66340','#F7C8B7','#EFDFCC','#ECDF9B'];
+	// updated color arrays 01/03/2024.10:02
+  let colorArray = ['#696D86','#CEDDDF','#EEECE1','#988B90','#8D887A','#2F3E3E','#B86D52','#FDC8B6','#EFDFCC','#EEE3A4'];
   let colorArray2 = ['#5B6D92','#CBDDE2','#EFEEE5','#9B8E9C','#8B8A7B','#364042','#C06A46','#F4C3B2','#F0E2D2','#EFD99A'];  
   let currentBoard = null;
   let playNow = $('button.play-now');
